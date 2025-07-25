@@ -1,11 +1,11 @@
-//Disease Prediction System using Machine Learning
+#Disease Prediction System using Machine Learning
 
 
-Overview
+##Overview
 
 The Disease Prediction System is a machine learning-based web application that predicts possible diseases based on user-input symptoms. The project uses Support Vector Machine (SVM), Naive Bayes, and Random Forest algorithms to train the model, and the Random Forest model is selected as the final model due to its higher accuracy. The frontend is built using Streamlit, and a user authentication system is implemented with SQLite and Passlib for secure login and signup.
 
-Features
+##Features
 
 Predicts disease based on user-selected symptoms.
 
@@ -21,9 +21,9 @@ Visualizes model performance with confusion matrices.
 
 Easy-to-use dropdowns and multiselect for symptoms.
 
-Project Flow
+##Project Flow
 
-Data Preparation:
+###Data Preparation:
 
 Load the dataset (Training and Testing CSV files).
 
@@ -33,7 +33,7 @@ Encode disease names using LabelEncoder.
 
 Convert symptoms to binary features (0 or 1).
 
-Model Training:
+###Model Training:
 
 Train three models: SVM, Naive Bayes, and Random Forest.
 
@@ -43,7 +43,7 @@ Select Random Forest as the final model.
 
 Save the trained model and data dictionary using Joblib.
 
-Backend Logic:
+###Backend Logic:
 
 Load the saved Random Forest model using Joblib.
 
@@ -51,7 +51,7 @@ Process user inputs (symptoms) into binary format.
 
 Predict the disease and map label back to disease name.
 
-Frontend Interface:
+###Frontend Interface:
 
 Built using Streamlit.
 
@@ -61,13 +61,13 @@ Disease prediction page handled by app.py.
 
 Displays predictions using interactive UI components.
 
-User Authentication:
+###User Authentication:
 
 SQLite database (users.db) stores user credentials.
 
 Passlib used for secure password hashing and verification.
 
-Technologies and Libraries
+###Technologies and Libraries
 
 Languages: Python
 
@@ -79,9 +79,9 @@ Machine Learning: scikit-learn (SVM, GaussianNB, RandomForestClassifier)
 
 Other Libraries: pandas, numpy, seaborn, matplotlib, joblib, passlib
 
-Setup Instructions
+###Setup Instructions
 
-1. Create and Activate a Python Environment
+##1. Create and Activate a Python Environment
 
 # Create a virtual environment
 python -m venv env
@@ -106,7 +106,7 @@ Sign up or log in to access the disease prediction page.
 
 Select gender, age, and symptoms, then click Predict to see the result.
 
-Future Enhancements
+##Future Enhancements
 
 Add advanced models like Deep Learning.
 
@@ -118,6 +118,6 @@ Deploy on cloud platforms like Heroku or AWS.
 
 Add voice-based symptom input and multilingual support.
 
-Author
+##Author
 
 Developed by Shaik Reshma as part of a machine learning project to predict diseases and create a user-friendly healthcare application.
