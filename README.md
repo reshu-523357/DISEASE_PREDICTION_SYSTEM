@@ -1,5 +1,6 @@
 Disease Prediction System using Machine Learning
 
+
 Overview
 
 The Disease Prediction System is a machine learning-based web application that predicts possible diseases based on user-input symptoms. The project uses Support Vector Machine (SVM), Naive Bayes, and Random Forest algorithms to train the model, and the Random Forest model is selected as the final model due to its higher accuracy. The frontend is built using Streamlit, and a user authentication system is implemented with SQLite and Passlib for secure login and signup.
